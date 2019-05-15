@@ -1,9 +1,9 @@
-<div class="container">
+<div class="container mt-3">
+  <h1>All our flats (4)</h1>
   <div class="row">
-    <h1>All our flats (4)</h1>
-    <div class="col-4">
       <% @flats.each do |flat| %>
-      <div class="card flex-column">
+    <div class="col-3">
+      <div class="card flex-column justify-content-center align-items-center border-top-0 shadow p-3 mb-5 bg-white rounded">
         <%= flat.name %>
         <%= flat.address %>
         <div class="price_number">
@@ -13,9 +13,8 @@
         <div class="description">
           <%= flat.description %>
         </div>
-        </div>
-        </div>
-        <br>
-      <% end %>
+      </div>
     </div>
-</div
+      <% end %>
+</div>
+</div>
